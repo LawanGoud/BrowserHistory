@@ -1,0 +1,76 @@
+.history-item-container {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #ececec; /* Adds separation between history items */
+  background-color: #f9fafb; /* Light background for clarity */
+  transition: background-color 0.3s ease;
+}
+
+.history-item-container:hover {
+  background-color: #f1f5f9; /* Subtle hover effect for item */
+}
+
+.history-time {
+  color: #475569;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  min-width: 80px; /* Ensures alignment of time */
+  text-align: right; /* Align text to the right for clarity */
+}
+
+.google-img {
+  width: 24px;
+  height: 24px;
+  margin: 0 10px;
+}
+
+.history-details {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.history-name {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #475569;
+  margin-right: 10px;
+  white-space: nowrap; /* Prevents wrapping */
+  overflow: hidden; /* Ensures long titles are truncated */
+  text-overflow: ellipsis;
+  max-width: 200px; /* Set max width to control text overflow */
+}
+
+.history-site {
+  color: #64748b;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.delete-img {
+  width: 20px;
+  height: 20px;
+}
+
+.history-item-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.delete-container {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  outline: none;
+  transition: transform 0.3s ease;
+}
+
+.delete-container:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
